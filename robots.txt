@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qm-berater-eisenbahn.qmberater.info/sitemap.xml

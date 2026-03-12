@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISO 9001 Zertifizierung Eisenbahnpersonal-Dienstleister | QMBerater.info</title>
+  <meta name="description" content="ISO 9001 für Eisenbahnpersonal-Dienstleister: Triebfahrzeugführer, Wagenmeister, EVU-Überlassung. 30+ Jahre Erfahrung, persönliche Beratung. Jetzt Gespräch vereinbaren.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://qm-berater-eisenbahn.qmberater.info/">
+  <meta property="og:title" content="ISO 9001 Zertifizierung für Eisenbahnpersonal-Dienstleister | QMBerater.info">
+  <meta property="og:description" content="QM-Beratung für EVU & Bahnpersonal-Verleiher. Triebfahrzeugführer, Wagenmeister, Schienenverkehr. Persönlich, praxisnah, effizient.">
+  <meta property="og:url" content="https://qm-berater-eisenbahn.qmberater.info/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "QMBerater.info – Holger Grosser",
+    "description": "Persönliche ISO-Beratung für Eisenbahnpersonal-Dienstleister und EVU. ISO 9001, ISO 45001.",
+    "url": "https://qm-berater-eisenbahn.qmberater.info/",
+    "telephone": "+49-911-49522541",
+    "email": "info@onlinecert.info",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fürth",
+      "addressCountry": "DE"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "10",
+      "bestRating": "5"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Holger Grosser",
+      "jobTitle": "QM-Berater",
+      "knowsAbout": ["ISO 9001", "ISO 45001", "Qualitätsmanagement", "Eisenbahnverkehr", "EVU"]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-deep: #0d1117;
+      --bg-card: #161b22;
+      --bg-raised: #1c2230;
+      --rail-gold: #d4a017;
+      --rail-amber: #f0b429;
+      --rail-rust: #c0392b;
+      --accent-green: #2ecc71;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --text-muted: #484f58;
+      --border: rgba(255,255,255,0.07);
+      --border-accent: rgba(212,160,23,0.3);
+      --radius: 10px;
+      --radius-lg: 16px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--bg-deep);
+      color: var(--text-primary);
+      line-height: 1.65;
+      font-size: 17px;
+      overflow-x: hidden;
+    }
+
+    /* ---- RAIL TEXTURE BACKGROUND ---- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(90deg, rgba(212,160,23,0.015) 0px, transparent 1px, transparent 80px, rgba(212,160,23,0.015) 81px),
+        repeating-linear-gradient(180deg, rgba(255,255,255,0.008) 0px, transparent 1px, transparent 120px, rgba(255,255,255,0.008) 121px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    * { position: relative; z-index: 1; }
+
+    h1, h2, h3, h4 { font-family: 'Syne', sans-serif; line-height: 1.15; }
+
+    a { color: var(--rail-gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 80px 0; }
+    .section-sm { padding: 48px 0; }
+
+    /* ---- TOP BAR ---- */
+    .topbar {
+      background: linear-gradient(90deg, var(--rail-rust), #922b21);
+      padding: 10px 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-align: center;
+    }
+    .topbar a { color: #fff; font-weight: 600; }
+
+    /* ---- NAVBAR ---- */
+    .navbar {
+      background: rgba(13,17,23,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--text-primary);
+    }
+    .nav-logo span { color: var(--rail-gold); }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links a { font-family: 'Syne', sans-serif; font-size: 14px; color: var(--text-secondary); font-weight: 600; transition: color .2s; }
+    .nav-links a:hover { color: var(--rail-gold); text-decoration: none; }
+    .nav-cta {
+      background: var(--rail-gold);
+      color: #0d1117 !important;
+      padding: 9px 20px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 14px;
+      transition: background .2s, transform .1s;
+    }
+    .nav-cta:hover { background: var(--rail-amber); transform: translateY(-1px); }
+
+    /* ---- HERO ---- */
+    .hero {
+      padding: 90px 0 80px;
+      background: radial-gradient(ellipse 80% 60% at 60% 0%, rgba(212,160,23,0.07) 0%, transparent 70%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 56px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212,160,23,0.1);
+      border: 1px solid var(--border-accent);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--rail-gold);
+      letter-spacing: 0.06em;
+      margin-bottom: 24px;
+    }
+    .hero-badge::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: var(--rail-gold);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.3)} }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--rail-gold);
+      display: block;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 36px;
+      max-width: 520px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--rail-gold);
+      color: #0d1117;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--rail-amber); transform: translateY(-2px); text-decoration: none; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: border-color .2s, transform .15s;
+    }
+    .btn-secondary:hover { border-color: var(--rail-gold); text-decoration: none; transform: translateY(-2px); }
+
+    /* ---- HERO CARD ---- */
+    .hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      box-shadow: 0 24px 48px rgba(0,0,0,.5);
+    }
+    .holger-foto {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--rail-gold);
+      box-shadow: 0 0 24px rgba(212,160,23,0.3);
+    }
+    .hero-card-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      text-align: center;
+    }
+    .hero-card-title {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: -16px;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+    }
+    .stat-item {
+      background: var(--bg-raised);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 12px;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--rail-gold);
+      display: block;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* ---- TRUST BAR ---- */
+    .trust-bar {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .trust-items {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .trust-item .icon { color: var(--rail-gold); font-size: 18px; }
+
+    /* ---- SECTIONS ---- */
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--rail-gold);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 580px;
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    /* ---- PROBLEM SECTION ---- */
+    .problem-bg {
+      background: linear-gradient(180deg, transparent 0%, rgba(192,57,43,0.04) 50%, transparent 100%);
+    }
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .problem-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      transition: border-color .2s, transform .2s;
+    }
+    .problem-card:hover { border-color: rgba(192,57,43,0.4); transform: translateY(-3px); }
+    .problem-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .problem-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .problem-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ---- SOLUTION SECTION ---- */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .solution-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--rail-gold);
+      border-radius: var(--radius-lg);
+      padding: 30px 26px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .solution-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(212,160,23,0.1); }
+    .solution-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--rail-gold);
+    }
+    .solution-card p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ---- NORMEN SECTION ---- */
+    .normen-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+    .norm-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: border-color .2s;
+    }
+    .norm-card:hover { border-color: var(--border-accent); }
+    .norm-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      background: rgba(212,160,23,0.12);
+      color: var(--rail-gold);
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+    .norm-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .norm-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .norm-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .norm-list li::before {
+      content: '→';
+      color: var(--rail-gold);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ---- BRANCHEN-TYPEN ---- */
+    .types-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .type-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      text-align: center;
+      transition: border-color .2s, transform .2s;
+    }
+    .type-card:hover { border-color: var(--border-accent); transform: translateY(-2px); }
+    .type-icon { font-size: 32px; margin-bottom: 10px; display: block; }
+    .type-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .type-card p { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+
+    /* ---- EXPERTISE TABLE ---- */
+    .expertise-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .expertise-header {
+      background: linear-gradient(90deg, var(--bg-raised), var(--bg-card));
+      padding: 28px 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .expertise-header h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .expertise-grid-inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .expertise-item {
+      padding: 24px 32px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .expertise-item:nth-child(2n) { border-right: none; }
+    .expertise-item h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--rail-gold);
+      margin-bottom: 8px;
+    }
+    .expertise-item p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    /* ---- PROZESS ---- */
+    .prozess-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .prozess-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 8%;
+      right: 8%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--rail-gold), transparent);
+      z-index: 0;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .step-num {
+      width: 64px;
+      height: 64px;
+      background: var(--bg-card);
+      border: 2px solid var(--rail-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--rail-gold);
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(212,160,23,0.2);
+    }
+    .step h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .step p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+    /* ---- ÜBER HOLGER ---- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .about-foto-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .about-foto {
+      width: 260px;
+      height: 260px;
+      border-radius: var(--radius-lg);
+      object-fit: cover;
+      border: 2px solid var(--border-accent);
+      box-shadow: 0 24px 48px rgba(0,0,0,.4);
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      width: 100%;
+    }
+    .contact-card h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+    .contact-item a { color: var(--rail-gold); }
+    .about-content h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .about-content p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+    .tag {
+      background: var(--bg-raised);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: transform .2s, border-color .2s;
+    }
+    .testimonial-card:hover { transform: translateY(-3px); border-color: var(--border-accent); }
+    .stars { color: var(--rail-gold); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+    .testimonial-text {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .author-avatar {
+      width: 38px; height: 38px;
+      background: linear-gradient(135deg, var(--rail-gold), var(--rail-amber));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: #0d1117;
+      flex-shrink: 0;
+    }
+    .author-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .author-company { font-size: 12px; color: var(--text-muted); }
+    .testimonials-footer {
+      text-align: center;
+      margin-top: 36px;
+    }
+    .google-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 24px;
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      transition: border-color .2s, color .2s;
+    }
+    .google-link:hover { border-color: var(--border-accent); color: var(--rail-gold); text-decoration: none; }
+
+    /* ---- FAQ ---- */
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 780px; margin: 0 auto; }
+    details {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color .2s;
+    }
+    details:hover, details[open] { border-color: var(--border-accent); }
+    summary {
+      padding: 20px 24px;
+      cursor: pointer;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 20px;
+      color: var(--rail-gold);
+      flex-shrink: 0;
+      transition: transform .2s;
+    }
+    details[open] summary::after { transform: rotate(45deg); }
+    .faq-answer {
+      padding: 0 24px 20px;
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ---- CTA SECTION ---- */
+    .cta-section {
+      background: linear-gradient(135deg, var(--bg-card), var(--bg-raised));
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 64px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 280px; height: 280px;
+      background: radial-gradient(circle, rgba(212,160,23,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-section h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .cta-section p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-checks {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .cta-check {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+    }
+    .cta-check::before { content: '✓'; color: var(--accent-green); }
+
+    /* ---- CROSS-LINKS ---- */
+    .crosslink-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .crosslink-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: border-color .2s, transform .2s;
+    }
+    .crosslink-card:hover { border-color: var(--border-accent); transform: translateY(-2px); text-decoration: none; }
+    .crosslink-icon { font-size: 36px; flex-shrink: 0; }
+    .crosslink-content h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .crosslink-content p { font-size: 13px; color: var(--text-secondary); }
+    .crosslink-arrow { margin-left: auto; color: var(--rail-gold); font-size: 18px; flex-shrink: 0; }
+
+    /* ---- FOOTER ---- */
+    .footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 32px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+    .footer-brand h3 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    .footer-brand h3 span { color: var(--rail-gold); }
+    .footer-brand p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+    .footer-col h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      transition: color .2s;
+    }
+    .footer-col a:hover { color: var(--rail-gold); text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: gap;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-card { display: grid; grid-template-columns: auto 1fr; gap: 24px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-foto-wrap { flex-direction: row; align-items: flex-start; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .prozess-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .prozess-steps::before { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .problems-grid, .solutions-grid, .normen-grid, .types-grid, .testimonials-grid { grid-template-columns: 1fr; }
+      .crosslink-grid { grid-template-columns: 1fr; }
+      .expertise-grid-inner { grid-template-columns: 1fr; }
+      .expertise-item { border-right: none !important; }
+      .hero-card { grid-template-columns: 1fr; align-items: center; text-align: center; }
+      .stat-grid { grid-template-columns: repeat(4, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .about-foto-wrap { flex-direction: column; align-items: center; }
+      .prozess-steps { grid-template-columns: 1fr; }
+      .cta-section { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  🚂 Persönliche QM-Beratung für Eisenbahnpersonal-Dienstleister &amp; EVU —
+  <a href="tel:+4991149522541">0911-49522541</a> · 30+ Jahre Bahnerfahrung
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="nav-logo">QM<span>Berater</span>.info</div>
+    <div class="nav-links">
+
+      <a href="#normen">Normen</a>
+      <a href="#beratung">Expertise</a>
+      <a href="#testimonials">Bewertungen</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://onlinecert.info" target="_blank">Zertifizierung → OnlineCert</a>
+      <a href="https://qm-guru.de" target="_blank">Schulung → QM-Guru</a>
+      <a href="https://calendly.com/qm-guru/beratung" target="_blank" class="nav-cta">Gespräch vereinbaren</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">EISENBAHNPERSONAL-DIENSTLEISTUNGEN</div>
+        <h1>ISO 9001 für Verleiher &amp; Vermittler von
+          <em>Bahnpersonal</em>
+        </h1>
+        <p class="hero-sub">
+          Triebfahrzeugführer, Wagenmeister, Streckenkundige — Ihr Unternehmen arbeitet im streng regulierten Eisenbahnverkehr. Mit über 30 Jahren Erfahrung begleite ich Sie persönlich zur ISO-Zertifizierung: praxisnah, effizient, ohne unnötigen Dokumentationsaufwand.
+        </p>
+        <div class="hero-actions">
+          <a href="https://calendly.com/qm-guru/beratung" target="_blank" class="btn-primary">🗓️ Persönliches Gespräch vereinbaren</a>
+          <a href="tel:+4991149522541" class="btn-secondary">📞 Jetzt anrufen</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="data:image/webp;base64,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"
+             alt="Holger Grosser – QM-Berater seit 1994"
+             class="holger-foto"
+             loading="eager"
+             width="130" height="130">
+        <div class="hero-card-name">Holger Grosser</div>
+        <div class="hero-card-title">QM-Berater · Fürth · seit 1994</div>
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Jahre Erfahrung</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">1.000+</span>
+            <span class="stat-label">Audits</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5,0</span>
+            <span class="stat-label">Google-Rating</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">BVUZ</span>
+            <span class="stat-label">Mitglied</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item"><span class="icon">🏛️</span> BVUZ-Mitglied</div>
+      <div class="trust-item"><span class="icon">⭐</span> 5,0 Google-Bewertung</div>
+      <div class="trust-item"><span class="icon">🚂</span> EVU & Personalverleiher</div>
+      <div class="trust-item"><span class="icon">📋</span> ISO 9001 · ISO 45001</div>
+      <div class="trust-item"><span class="icon">💶</span> BAFA-förderfähige Beratung</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- LÖSUNGEN -->
+<section class="section" id="loesung">
+  <div class="container">
+    <div class="section-label">MEINE BERATUNG</div>
+    <h2 class="section-title">Persönlich. Praxisnah. Auf den Punkt.</h2>
+    <p class="section-sub">Ich kenne die Besonderheiten des Eisenbahnsektors und übersetze ISO-Anforderungen in handhabbare Prozesse — ohne theoretischen Ballast.</p>
+    <div class="solutions-grid">
+      <div class="solution-card">
+        <h3>Branchenspezifisches QM-System</h3>
+        <p>Kein generisches Handbuch von der Stange: Ich entwickle mit Ihnen ein QM-System, das die Anforderungen der Eisenbahnbetriebsordnung, des AÜG und der ISO 9001 nahtlos verbindet — angepasst an Ihre tatsächlichen Abläufe.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Qualifikationsmanagement für Bahnberufe</h3>
+        <p>Tf-Lizenzen, Streckenkundschaften, Tauglichkeitsuntersuchungen, Betriebsdiensttauglichkeit — ich helfe Ihnen, all das systematisch zu erfassen, zu überwachen und rechtzeitig zu verlängern.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Audit-Vorbereitung & Begleitung</h3>
+        <p>Ich bereite Ihr Team auf interne und externe Audits vor: Was kommt der Auditor wirklich fragen? Welche Nachweise müssen vorliegen? Mit meiner Vorbereitung gehen Sie entspannt ins Audit.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Pragmatische Dokumentation</h3>
+        <p>Meine Philosophie: "So wenig wie möglich, so viel wie nötig." Dokumentation soll Ihre Arbeit erleichtern, nicht erschweren. Ich zeige Ihnen, was wirklich gebraucht wird — und was Sie weglassen können.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NORMEN -->
+<section class="section" id="normen" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">ISO-NORMEN</div>
+    <h2 class="section-title">Relevante Normen für<br>Ihren Betrieb</h2>
+    <div class="normen-grid">
+      <div class="norm-card">
+        <span class="norm-tag">ISO 9001:2015</span>
+        <h3>Qualitätsmanagementsystem</h3>
+        <ul class="norm-list">
+          <li>Prozessmanagement für Personalgewinnung, -einsatz und -qualifikation</li>
+          <li>Anforderungsmanagement gegenüber EVU-Kunden</li>
+          <li>Dokumentierte Eignungsnachweise & Qualifikationsregister</li>
+          <li>Kundenzufriedenheitsmanagement für EVU-Auftraggeber</li>
+          <li>Lieferantenbewertung (Subunternehmer, Unterweiser)</li>
+        </ul>
+      </div>
+      <div class="norm-card">
+        <span class="norm-tag">ISO 45001:2018</span>
+        <h3>Arbeitsschutzmanagement</h3>
+        <ul class="norm-list">
+          <li>Gefährdungsbeurteilung für Gleisarbeiten und Tfz-Führertätigkeiten</li>
+          <li>Betriebsanweisungen für besondere Gefahrenbereiche</li>
+          <li>Notfallmanagement und Ersthelfer-Konzept</li>
+          <li>Arbeitszeitkontrolle und Ruhezeiten im Schichtbetrieb</li>
+          <li>Psychische Belastungen im Eisenbahnbetrieb</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHEN-TYPEN -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">UNTERNEHMENSTYPEN</div>
+    <h2 class="section-title">Für welche Unternehmen<br>berate ich</h2>
+    <div class="types-grid">
+      <div class="type-card">
+        <span class="type-icon">🚂</span>
+        <h3>Triebfahrzeugführer-Verleiher</h3>
+        <p>Überlassung von TfF nach AÜG §1, Tf-Lizenz-Management, Streckenkundschaften</p>
+      </div>
+      <div class="type-card">
+        <span class="type-icon">🔧</span>
+        <h3>Wagenmeister & Zugpersonal</h3>
+        <p>Triebwagen-Techniker, Zugbegleiter, Betriebsdiensttauglichkeitsnachweise</p>
+      </div>
+      <div class="type-card">
+        <span class="type-icon">🏗️</span>
+        <h3>Infrastrukturpersonal</h3>
+        <p>Gleisbauer, Sicherungsposten, Schrankenwärter, Fdl-Aushilfen</p>
+      </div>
+      <div class="type-card">
+        <span class="type-icon">🚇</span>
+        <h3>ÖPNV & Stadtbahn</h3>
+        <p>Straßenbahnfahrer, U-Bahn-Personal, BOStrab-regulierte Bereiche</p>
+      </div>
+      <div class="type-card">
+        <span class="type-icon">🏢</span>
+        <h3>Personalvermittlung Bahn</h3>
+        <p>Direktvermittlung von Bahnfachkräften, Headhunting für EVU</p>
+      </div>
+      <div class="type-card">
+        <span class="type-icon">🎓</span>
+        <h3>Ausbildungsträger & Umschulung</h3>
+        <p>Tf-Ausbildung, Umschulung zum Triebfahrzeugführer, Fachkundelehrgänge</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section section-sm" id="beratung" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">MEINE EXPERTISE</div>
+    <h2 class="section-title" style="margin-bottom: 36px;">Was Sie von der Beratung erwarten</h2>
+    <div class="expertise-section">
+      <div class="expertise-header">
+        <h3>Beratungsleistungen für Eisenbahnpersonal-Dienstleister</h3>
+      </div>
+      <div class="expertise-grid-inner">
+        <div class="expertise-item">
+          <h4>Ist-Analyse & Gap-Assessment</h4>
+          <p>Ich analysiere Ihre bestehenden Prozesse gegen ISO 9001-Anforderungen — strukturiert, ohne unnötigen Aufwand. Sie erhalten einen klaren Überblick, was bereits passt und was noch fehlt.</p>
+        </div>
+        <div class="expertise-item">
+          <h4>QM-Handbuch & Prozessdokumentation</h4>
+          <p>Schlankes QM-Handbuch, das wirklich zur Eisenbahnbranche passt: Qualifikationsmanagement für Tf-Lizenzen, Arbeitssicherheitsrichtlinien für Gleisbereiche, AÜG-konforme Prozesse.</p>
+        </div>
+        <div class="expertise-item">
+          <h4>Internes Audit & Zertifizierungsvorbereitung</h4>
+          <p>Erster interner Audit durch mich identifiziert Schwachstellen — bevor der externe Auditor kommt. So vermeiden Sie unangenehme Überraschungen beim Erstzertifizierungsaudit.</p>
+        </div>
+        <div class="expertise-item">
+          <h4>Begleitung bei Überwachungsaudits</h4>
+          <p>Auch nach der Zertifizierung stehe ich zur Verfügung: Vorbereitung auf jährliche Überwachungsaudits, Unterstützung bei Abweichungsbehandlung, kontinuierliche Verbesserung.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROZESS -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">ABLAUF</div>
+    <h2 class="section-title" style="margin-bottom: 56px;">In 4 Schritten zur<br>ISO-Zertifizierung</h2>
+    <div class="prozess-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Kostenfreies Erstgespräch</h3>
+        <p>Wir analysieren Ihre aktuelle Situation, klären Anforderungen und definieren gemeinsam das Projektziel.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Gap-Analyse & Projektplan</h3>
+        <p>Ich prüfe Ihre bestehenden Prozesse gegen ISO-Anforderungen und erstelle einen realistischen Zeitplan.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>QM-Aufbau & Dokumentation</h3>
+        <p>Gemeinsam erarbeiten wir schlanke Prozessdokumente, die Ihre Mitarbeiter auch wirklich nutzen werden.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Audit & Zertifizierung</h3>
+        <p>Ich begleite Sie durch das Zertifizierungsaudit — und bleibe auch danach als Ansprechpartner verfügbar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER HOLGER -->
+<section class="section" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-foto-wrap">
+        <img src="data:image/webp;base64,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"
+             alt="Holger Grosser – QM-Berater und Auditor seit 1994"
+             class="about-foto"
+             loading="lazy"
+             width="260" height="260">
+        <div class="contact-card">
+          <h4>Direktkontakt</h4>
+          <div class="contact-item">📞 <a href="tel:+4991149522541">0911-49522541</a></div>
+          <div class="contact-item">📧 <a href="/cdn-cgi/l/email-protection#2841464e476847464441464d4b4d5a5c0641464e47"><span class="__cf_email__" data-cfemail="01686f676e416e6f6d686f64626473752f686f676e">[email&#160;protected]</span></a></div>
+          <div class="contact-item">💬 <a href="https://wa.me/491579231667" target="_blank">WhatsApp</a></div>
+          <div class="contact-item">🗓️ <a href="https://calendly.com/qm-guru/beratung" target="_blank">Online-Termin buchen</a></div>
+          <div class="contact-item">📍 Fürth, Deutschland</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-label">ÜBER MICH</div>
+        <h2>Holger Grosser —<br>Ihr persönlicher QM-Berater</h2>
+        <p>Seit 1994 berate ich Unternehmen beim Aufbau und der Optimierung von Managementsystemen. In über 1.000 Audits habe ich gelernt, was wirklich zählt — und was nur Papiertiger sind.</p>
+        <p>Im Bereich Transportdienstleistungen und regulierte Branchen kenne ich die Besonderheiten: hohe regulatorische Anforderungen, personalintensive Prozesse, komplexe Qualifikationsanforderungen. Mein Ansatz: pragmatisch, auf das Wesentliche fokussiert.</p>
+        <p>Als BVUZ-Mitglied und erfahrener Auditor biete ich Ihnen die Kombination aus unabhängiger Zertifizierung über OnlineCert.info und persönlicher Beratungsunterstützung — alles aus einer Hand.</p>
+        <div class="about-tags">
+          <span class="tag">ISO 9001</span>
+          <span class="tag">ISO 45001</span>
+          <span class="tag">ISO 14001</span>
+          <span class="tag">Transportwesen</span>
+          <span class="tag">BVUZ-Mitglied</span>
+          <span class="tag">30+ Jahre</span>
+          <span class="tag">1.000+ Audits</span>
+          <span class="tag">BAFA-förderfähig</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-label">KUNDENSTIMMEN</div>
+    <h2 class="section-title">Was Kunden über<br>die Zusammenarbeit sagen</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Statt mehr Arbeit mit dem Management und der Dokumentation, habe ich nun weniger Arbeit damit. So soll das sein. Praxisbezogene Hilfe statt theoretischem Wasserkopf."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SF</div>
+          <div>
+            <div class="author-name">Simon Filgis</div>
+            <div class="author-company">Google-Bewertung ★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Herr Grosser hat uns sehr geholfen, unsere bereits bestehenden Prozesse an den notwendigen Stellen so zu ergänzen, dass wir kaum Mehraufwände zur Vorbereitung auf das Audit hatten und dieses mit Erfolg abschließen konnten."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">NK</div>
+          <div>
+            <div class="author-name">Nicole Könning</div>
+            <div class="author-company">Google-Bewertung ★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Die Kommunikation verlief stets klar und transparent, Herr Grosser war absolut zuverlässig, reagierte schnell auf Rückfragen und überzeugte durch höchste Fachkompetenz."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MS</div>
+          <div>
+            <div class="author-name">Maximilian Sydow</div>
+            <div class="author-company">GF LT24 GmbH &amp; TrainVision GmbH</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-footer">
+      <a href="https://www.google.com/maps/place/Holger+Grosser+QM+Dienstleistungen" target="_blank" class="google-link">
+        ⭐ 5,0 / 5 — Alle Google-Bewertungen ansehen
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title" style="text-align:center; margin-bottom: 40px;">Häufige Fragen von<br>Eisenbahnpersonal-Dienstleistern</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Brauchen wir als Personalverleiher für Triebfahrzeugführer eine ISO-Zertifizierung?</summary>
+        <div class="faq-answer">
+          Formal besteht keine gesetzliche Pflicht zur ISO 9001-Zertifizierung. In der Praxis verlangen jedoch viele EVU (z.B. DB Cargo, Captrain, Rail4Chem) von ihren Personaldienstleistern zunehmend einen ISO-Nachweis als Vergabekriterium. Außerdem hilft eine Zertifizierung, das AÜG-konforme Qualifikationsmanagement zu strukturieren und zu dokumentieren.
+        </div>
+      </details>
+      <details>
+        <summary>Wie lange dauert der Aufbau eines QM-Systems für einen Bahnpersonal-Dienstleister?</summary>
+        <div class="faq-answer">
+          Je nach Unternehmensgröße und Vorarbeiten dauert der Aufbau in den allermeisten Fällen zwischen 3 und 9 Monaten. Kleine Unternehmen mit 10–30 Mitarbeitern können das in 3–4 Monaten schaffen. Entscheidend ist, dass die Dokumentation schlank bleibt und tatsächlich gelebte Prozesse abbildet — ich achte darauf, dass kein unnötiger Aufwand entsteht.
+        </div>
+      </details>
+      <details>
+        <summary>Was kostet die Zertifizierungsberatung?</summary>
+        <div class="faq-answer">
+          Das hängt von Unternehmensgröße, Komplexität und Ihrem Vorbereitungsstand ab. Im kostenlosen Erstgespräch kann ich einen realistischen Aufwand und Kostenrahmen einschätzen. Wichtig: Als Klein- oder Mittelunternehmen können Sie Beratungskosten über BAFA-Programme (De-Minimis-Beihilfe, Förderung unternehmerischen Know-hows) bezuschussen lassen.
+        </div>
+      </details>
+      <details>
+        <summary>Wie verknüpfe ich AÜG-Anforderungen mit ISO 9001?</summary>
+        <div class="faq-answer">
+          Das AÜG (Arbeitnehmerüberlassungsgesetz) verlangt u.a. Nachweise über Qualifikationen der Leiharbeitnehmer, equal-pay-Regelungen und eine Überlassungserlaubnis. Diese Anforderungen lassen sich sehr gut in ein ISO 9001-QM-System integrieren: Das Qualifikationsmanagement, das Beschwerdewesen und die Lieferantenbewertung der ISO decken viele AÜG-Pflichten bereits ab. Ich zeige Ihnen, wie das effizient funktioniert.
+        </div>
+      </details>
+      <details>
+        <summary>Muss das QM-System auch Streckenkundschaften und Tf-Lizenzen abbilden?</summary>
+        <div class="faq-answer">
+          Ja, und das ist einer der wichtigsten Mehrwerte eines QM-Systems für Bahnpersonal-Dienstleister: Ein strukturiertes Qualifikationsregister erfasst alle relevanten Qualifikationen (Tf-Lizenz, Zusatzbescheinigungen, Streckenkundschaften, Tauglichkeitsuntersuchungen) mit Ablaufdaten und erinnert rechtzeitig an Verlängerungen. Das verhindert teure Einsatzausfälle.
+        </div>
+      </details>
+      <details>
+        <summary>Kann ich die Beratung auch für ISO 45001 (Arbeitsschutz) nutzen?</summary>
+        <div class="faq-answer">
+          Ja, und das empfehle ich für Eisenbahnpersonal-Dienstleister ausdrücklich. Die Arbeit im Gleisbereich, als Triebfahrzeugführer oder Wagenmeister birgt spezifische Risiken. ISO 45001 liefert das Rahmenwerk für ein systematisches Arbeitsschutzmanagement — Gefährdungsbeurteilungen, Notfallpläne, Arbeitsschutzunterweisungen. Ich berate bei ISO 9001 und ISO 45001 — beide Normen, ein Ansprechpartner.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- KALKULATOR SECTION -->
+<section class="section" id="angebot" style="background: var(--bg-card); border-top: 1px solid var(--border-accent); border-bottom: 1px solid var(--border-accent);">
+  <div class="container">
+    <div class="section-label" style="display:flex;justify-content:center;margin-bottom:12px;">SOFORT-ANGEBOT</div>
+    <h2 style="text-align:center;margin-bottom:8px;">Ihr Angebot — sofort &amp; kostenlos</h2>
+    <p style="text-align:center;color:var(--text-secondary);font-size:16px;max-width:540px;margin:0 auto 40px;">Paket wählen, Daten eingeben — Ihr Angebot kommt direkt per E-Mail. Kein Gespräch vorher nötig.</p>
+
+    <div id="kalkulator" style="max-width:640px;margin:0 auto;">
+
+      <!-- STEP 1: Betriebsgröße -->
+      <div id="step-size" class="kalk-step">
+        <div class="kalk-label">Ihr Paket</div>
+        <div class="kalk-packages" style="grid-template-columns:1fr;max-width:320px;margin:0 auto;">
+          <div class="kalk-pkg active" data-pkg="standard" data-price="3500" data-bafa="1050" style="cursor:default;">
+            <div class="pkg-icon">🚆</div>
+            <div class="pkg-name">ISO 9001 Zertifizierung</div>
+            <div class="pkg-price">3.500 €</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREISANZEIGE -->
+      <div class="kalk-summary" id="kalk-summary">
+        <div class="kalk-sum-row">
+          <span class="kalk-sum-label">Paket:</span>
+          <span class="kalk-sum-val" id="sum-pkg">ISO 9001 Zertifizierung</span>
+        </div>
+        <div class="kalk-sum-row">
+          <span class="kalk-sum-label">Norm:</span>
+          <span class="kalk-sum-val">ISO 9001:2015</span>
+        </div>
+        <div class="kalk-sum-row kalk-sum-main">
+          <span class="kalk-sum-label">Gesamtpreis:</span>
+          <span class="kalk-sum-price" id="sum-price">3.500 € netto</span>
+        </div>
+        <div class="kalk-bafa" id="kalk-bafa">
+          <span class="bafa-icon">💶</span>
+          <span>Sie erhalten bis zu <strong id="bafa-amount">1.750 €</strong> von der BAFA zurück</span>
+        </div>
+        <div class="kalk-bafa-berater">
+          <span>✅</span>
+          <span>Holger Grosser ist <strong>BAFA-zugelassener Berater</strong> — die Förderung ist direkt beantragbar</span>
+        </div>
+      </div>
+
+      <!-- STEP 2: Kontaktdaten -->
+      <div class="kalk-label" style="margin-top:28px;margin-bottom:16px;">Wohin soll das Angebot?</div>
+      <div id="kalk-form">
+        <div class="kalk-field">
+          <label class="kalk-field-label">Firmenname *</label>
+          <input type="text" id="k-firma" class="kalk-input" placeholder="Ihr Unternehmen GmbH" required>
+        </div>
+        <div class="kalk-field">
+          <label class="kalk-field-label">Ansprechpartner *</label>
+          <input type="text" id="k-name" class="kalk-input" placeholder="Vor- und Nachname" required>
+        </div>
+        <div class="kalk-field">
+          <label class="kalk-field-label">E-Mail *</label>
+          <input type="email" id="k-email" class="kalk-input" placeholder="ihre@email.de" required>
+          <div class="kalk-field-hint">📄 Ihr Angebot als PDF — direkt in Ihrem Postfach</div>
+        </div>
+        <div class="kalk-field">
+          <label class="kalk-field-label">Telefon <span style="color:var(--text-muted);font-weight:400">(optional)</span></label>
+          <input type="tel" id="k-tel" class="kalk-input" placeholder="+49 ...">
+        </div>
+        <button class="kalk-submit" id="kalk-btn" onclick="submitKalkulator()">
+          Jetzt Angebot anfordern — kostenlos
+        </button>
+        <div class="kalk-trust-row">
+          <span>✅ Kostenlos &amp; unverbindlich</span>
+          <span>📬 Angebot sofort per E-Mail</span>
+          <span>🏅 30 Jahre Erfahrung · 1.000+ Audits</span>
+        </div>
+      </div>
+
+      <!-- SUCCESS STATE -->
+      <div id="kalk-success" style="display:none;text-align:center;padding:40px 24px;">
+        <div style="font-size:48px;margin-bottom:16px;">✅</div>
+        <h3 style="font-family:'Syne',sans-serif;color:var(--text-primary);margin-bottom:12px;">Ihr Angebot ist unterwegs!</h3>
+        <p style="color:var(--text-secondary);font-size:15px;margin-bottom:24px;">Es landet gleich in Ihrem Postfach.<br>Bitte prüfen Sie ggf. auch den Spam-Ordner.</p>
+        <p style="font-size:14px;color:var(--text-secondary)"><strong style="color:var(--rail-gold)">Holger Grosser</strong> · QMBerater.info<br>
+        <a href="tel:091149522541" style="color:var(--rail-gold)">0911-49522541</a></p>
+      </div>
+
+    </div><!-- /kalkulator -->
+  </div>
+</section>
+
+<style>
+  /* === KALKULATOR — heller Bereich === */
+  #kalkulator {
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    box-shadow: 0 4px 32px rgba(0,0,0,.25);
+  }
+
+  .kalk-step { margin-bottom: 8px; }
+
+  .kalk-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #7c6200;
+    margin-bottom: 16px;
+  }
+
+  .kalk-packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  @media(max-width:600px){ .kalk-packages{ grid-template-columns:1fr; } }
+
+  /* Paket-Karten: weißer/hellgrauer Hintergrund, dunkle Schrift */
+  .kalk-pkg {
+    background: #f4f6f9;
+    border: 2px solid #dde1e8;
+    border-radius: var(--radius);
+    padding: 20px 16px;
+    cursor: pointer;
+    transition: border-color .2s, background .2s, transform .15s, box-shadow .2s;
+    text-align: center;
+  }
+  .kalk-pkg:hover {
+    border-color: var(--rail-gold);
+    background: #fffbf0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(212,160,23,.15);
+  }
+  .kalk-pkg.active {
+    border-color: var(--rail-gold);
+    background: #fffbf0;
+    box-shadow: 0 0 0 3px rgba(212,160,23,.18);
+  }
+
+  .pkg-icon { font-size: 26px; margin-bottom: 10px; }
+  .pkg-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+  }
+  .pkg-desc {
+    font-size: 12px;
+    color: #5a6272;
+    margin-bottom: 14px;
+    line-height: 1.4;
+  }
+  .pkg-price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: #a07000;
+  }
+
+  /* Preisanzeige */
+  .kalk-summary {
+    background: #fffbf0;
+    border: 1px solid #e8d080;
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-top: 20px;
+  }
+  .kalk-sum-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #ede8d8;
+    font-size: 14px;
+  }
+  .kalk-sum-row:last-child { border-bottom: none; }
+  .kalk-sum-label { color: #5a6272; }
+  .kalk-sum-val { color: #1a1a2e; font-weight: 600; }
+  .kalk-sum-main {
+    padding-top: 14px;
+    margin-top: 6px;
+    border-top: 1px solid #e8d080 !important;
+    border-bottom: none !important;
+  }
+  .kalk-sum-main .kalk-sum-label { font-size: 15px; font-weight: 700; color: #1a1a2e; }
+  .kalk-sum-price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    font-weight: 700;
+    color: #a07000;
+  }
+  .kalk-bafa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    background: #f0faf5;
+    border: 1px solid #a8dfc0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #1a7a4a;
+    font-weight: 600;
+  }
+  .bafa-icon { font-size: 18px; flex-shrink: 0; }
+  .kalk-bafa-berater {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    background: #f0f7ff;
+    border: 1px solid #b3d4f5;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #1a4a7a;
+    font-weight: 500;
+  }
+
+  /* Formularfelder */
+  .kalk-field { margin-bottom: 16px; }
+  .kalk-field-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3a4252;
+    margin-bottom: 6px;
+    font-family: 'Syne', sans-serif;
+  }
+  .kalk-field-hint { font-size: 12px; color: #8a93a2; margin-top: 5px; }
+  .kalk-input {
+    width: 100%;
+    background: #f8f9fb;
+    border: 1px solid #dde1e8;
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #1a1a2e;
+    font-family: inherit;
+    transition: border-color .2s, box-shadow .2s;
+    outline: none;
+  }
+  .kalk-input:focus {
+    border-color: var(--rail-gold);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(212,160,23,.15);
+  }
+  .kalk-input::placeholder { color: #b0b8c8; }
+  .kalk-input.error { border-color: var(--rail-rust); background: #fff8f8; }
+
+  /* Submit-Button */
+  .kalk-submit {
+    width: 100%;
+    background: var(--rail-gold);
+    color: #0d1117;
+    border: none;
+    border-radius: var(--radius);
+    padding: 16px 24px;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    letter-spacing: .02em;
+  }
+  .kalk-submit:hover {
+    background: var(--rail-amber);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(212,160,23,.35);
+  }
+  .kalk-submit:active { transform: translateY(0); }
+  .kalk-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+
+  /* Trust-Zeile */
+  .kalk-trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    justify-content: center;
+    margin-top: 16px;
+    font-size: 12px;
+    color: #7a8499;
+  }
+
+  /* Success-State im hellen Container */
+  #kalk-success { color: #1a1a2e; }
+  #kalk-success h3 { color: #1a1a2e; }
+  #kalk-success p { color: #5a6272; }
+</style>
+
+<!-- CTA SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="cta-section">
+      <div class="section-label" style="justify-content:center;display:flex;margin-bottom:16px;">JETZT STARTEN</div>
+      <h2>Ihr Eisenbahnpersonal-Unternehmen<br>verdient ein solides QM-System</h2>
+      <p>Vereinbaren Sie ein kostenfreies Erstgespräch. Ich analysiere Ihre Situation und zeige Ihnen den realistischsten Weg zur ISO-Zertifizierung — persönlich, ohne Verkaufsdruck.</p>
+      <div class="cta-actions">
+        <a href="https://calendly.com/qm-guru/beratung" target="_blank" class="btn-primary">🗓️ Kostenfreies Erstgespräch buchen</a>
+        <a href="tel:+4991149522541" class="btn-secondary">📞 0911-49522541</a>
+      </div>
+      <div class="cta-checks">
+        <span class="cta-check">Kostenfreies Erstgespräch</span>
+        <span class="cta-check">Kein Verkaufsdruck</span>
+        <span class="cta-check">30+ Jahre Erfahrung</span>
+        <span class="cta-check">BAFA-förderfähig</span>
+        <span class="cta-check">1.000+ erfolgreiche Audits</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CROSS-LINKS -->
+<section class="section-sm" style="border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label" style="text-align:center;margin-bottom:24px;">WEITERE SERVICES</div>
+    <div class="crosslink-grid">
+      <a href="https://iso-zertifizierung-eisenbahn.onlinecert.info" target="_blank" class="crosslink-card">
+        <div class="crosslink-icon">🏅</div>
+        <div class="crosslink-content">
+          <h3>Zertifizierung → OnlineCert.info</h3>
+          <p>Schnelle, günstige ISO-Zertifizierung ohne aufwendige akkreditierte Verfahren</p>
+        </div>
+        <div class="crosslink-arrow">→</div>
+      </a>
+      <a href="https://iso-9001-beratung-eisenbahn.qm-guru.de" target="_blank" class="crosslink-card">
+        <div class="crosslink-icon">🎓</div>
+        <div class="crosslink-content">
+          <h3>QM-Schulungen → QM-Guru.de</h3>
+          <p>BAFA-förderfähige QM-Schulungen und Mitarbeiterschulungen für Ihr Team</p>
+        </div>
+        <div class="crosslink-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>QM<span>Berater</span>.info</h3>
+        <p>Persönliche ISO-Beratung durch Holger Grosser seit 1994. Über 1.000 Audits, über 30 Jahre Erfahrung im Qualitätsmanagement für den deutschen Mittelstand.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="https://qmberater.info">QMBerater.info</a>
+        <a href="https://onlinecert.info">OnlineCert.info</a>
+        <a href="https://qm-guru.de">QM-Guru.de</a>
+        <a href="https://iso9001.info">ISO9001.info</a>
+      </div>
+      <div class="footer-col">
+        <h4>Normen</h4>
+        <a href="#">ISO 9001</a>
+        <a href="#">ISO 45001</a>
+        <a href="#">ISO 14001</a>
+        <a href="#">Bahnspezifisches QM</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <a href="tel:+4991149522541">0911-49522541</a>
+        <a href="/cdn-cgi/l/email-protection#3b52555d547b54555752555e585e494f1552555d54"><span class="__cf_email__" data-cfemail="553c3b333a153a3b393c3b30363027217b3c3b333a">[email&#160;protected]</span></a>
+        <a href="https://calendly.com/qm-guru/beratung" target="_blank">Online-Termin</a>
+        <a href="https://qm-guru.de/Sonstiges/Impressum" target="_blank">Impressum</a>
+        <a href="https://qm-guru.de/Sonstiges/Datenschutz" target="_blank">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 QMBerater.info – Holger Grosser QM-Dienstleistungen, Fürth</span>
+      <span style="color:var(--text-muted)">ISO 9001 · ISO 45001 · ISO 14001 für Eisenbahnpersonal-Dienstleister</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== KALKULATOR =====
+let selectedPkg = { name: 'ISO 9001 Zertifizierung', price: 3500, bafa: 1750 };
+
+function submitKalkulator() {
+  const firma = document.getElementById('k-firma');
+  const name = document.getElementById('k-name');
+  const email = document.getElementById('k-email');
+  let valid = true;
+
+  [firma, name, email].forEach(f => {
+    f.classList.remove('error');
+    if (!f.value.trim()) { f.classList.add('error'); valid = false; }
+  });
+  if (!valid) { return; }
+
+  const emailRe = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  if (!emailRe.test(email.value)) { email.classList.add('error'); return; }
+
+  const btn = document.getElementById('kalk-btn');
+  btn.disabled = true;
+  btn.textContent = 'Wird gesendet…';
+
+  // Build mailto as fallback + show success
+  const subject = encodeURIComponent('ISO 9001 Angebot: ' + firma.value + ' — ' + selectedPkg.name);
+  const body = encodeURIComponent(
+    'Angebot für: ' + firma.value + '\n' +
+    'Ansprechpartner: ' + name.value + '\n' +
+    'E-Mail: ' + email.value + '\n' +
+    (document.getElementById('k-tel').value ? 'Telefon: ' + document.getElementById('k-tel').value + '\n' : '') +
+    '\nPaket: ' + selectedPkg.name + '\n' +
+    'Preis: ' + selectedPkg.price.toLocaleString('de-DE') + ' € netto\n' +
+    'BAFA-Förderung: bis zu ' + selectedPkg.bafa.toLocaleString('de-DE') + ' €\n' +
+    'Branche: Eisenbahnpersonal-Dienstleistungen'
+  );
+
+  // Submit to angebot.qmberater.info via hidden form (POST to their form handler)
+  // or fallback to mailto
+  try {
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'https://angebot.qmberater.info/';
+    form.target = '_blank';
+    const fields = {
+      firma: firma.value,
+      name: name.value,
+      email: email.value,
+      tel: document.getElementById('k-tel').value,
+      paket: selectedPkg.name,
+      preis: selectedPkg.price,
+      branche: 'Eisenbahnpersonal-Dienstleistungen'
+    };
+    Object.keys(fields).forEach(k => {
+      const i = document.createElement('input');
+      i.type = 'hidden'; i.name = k; i.value = fields[k];
+      form.appendChild(i);
+    });
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
+  } catch(e) {}
+
+  // Also open mailto as reliable fallback
+  setTimeout(() => {
+    window.location.href = 'mailto:info@onlinecert.info?subject=' + subject + '&body=' + body;
+  }, 400);
+
+  // Show success state
+  setTimeout(() => {
+    document.getElementById('kalk-form').style.display = 'none';
+    document.getElementById('kalk-success').style.display = 'block';
+  }, 800);
+}
+
+// ===== FAQ ACCORDION =====
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
